@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+/* Top Section */
+#top {
+    background-image: url(https://www.kibrispdr.org/data/wallpaper-hd-laptop-full-screen-13.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gainsboro;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#top .top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#top h1 {
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+#top h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#top h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#top h1:nth-child(3) {
+    animation-delay: 3s;
+}
+
+#top h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #1ABC9C;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .3s;
+}
+
+#top h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#top h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+#top h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+#top .btn {
+    display: inline-block;
+    padding: 7px 18px;
+    color: white;
+    background-color: #1ABC9C;
+    border: 2px solid #1ABC9C;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1 rem;
+    margin-top: 30px;
+    transition: all .4s;
+}
+
+#top .btn:hover {
+    color: #1ABC9C;
+    background-color: transparent;
+}
+/* End Top Section */
+
+/* Content Section */
+
+#content .content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#content .content-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#content .content-title span {
+    color: #1ABC9C;
+}
+
+#content .content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#content .content-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(https://wallpaperaccess.com/full/643363.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#content .content-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#content .content-bottom .icon {
+    margin-bottom: 10px;
+}
+
+#content .content-item h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+#content .content-item p {
+    color: white;
+    text-align: left;
+}
+
+/* End Content Section */
+
+/* Form Section */
+#form .form {
+    margin: 0;
+    padding: 0 100px;
+}
+
+#form h1 {
+    border-top: 1px solid #c6d1d8;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#form p {
+    font-size: 1rem;
+}
+
+input, textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+
+#form .contact-submit {
+    background-color: grey;
+    color: white;
+    transition: ease-in-out .3s;
+}
+
+#form .contact-submit:hover {
+    background-color: #dee7ec;
+    color: black;
+    cursor: pointer;
+}
+
+/* End Form Section */
+
+/* Footer */
+#footer {
+    background-image: linear-gradient(60deg, #1ABC9C 0%, #485563 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#footer h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin: 10px 0;
+}
+
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer .social-item img {
+    filter: grayscale(0);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover img {
+    filter: grayscale(1);
+}
+
+#footer p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* End Footer */
+
+/* Keyframes */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+/* End Keyframes */
+
+/* Media Query For Tablet */
+@media only screen and (min-width:768px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    #top h1 {
+        font-size: 4rem;
+    }
+
+    #top .btn {
+        font-size: 1.3rem;
+        padding: 15px 35px;
+    }
+
+    #content .content-title {
+        font-size: 5rem;
+    }
+
+    #content .flex-content-bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #content .flex-content-bottom .content-bottom {
+        width: 50%;
+    }
+
+    /* #content .content-bottom .content-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    } */
+
+    #form h1 {
+        font-size: 2.5rem;
+    }
+
+}
+/* End Media Query For Tablet */
