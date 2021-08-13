@@ -366,14 +366,16 @@ p {
     flex-direction: column;
 }
 
-#form h1 {
+#form .form-title {
     border-top: 1px solid #c6d1d8;
     font-size: 2rem;
     margin-bottom: 30px;
+    color: black;
 }
 
-#form p {
+#form .form-text {
     font-size: 1rem;
+    color: black;
 }
 
 input, textarea {
@@ -529,24 +531,14 @@ input, textarea {
         font-size: 1rem;
     }
 
-    /* #content .content-bottom .content-item {
-        flex-basis: 45%;
-        margin: 2.5%;
-    } */
-
     #form .form {
         text-align: left;
     }
 
-    #form h1 {
+    #form .form-title {
         font-size: 2.5rem;
     }
 
-}
-/* End Media Query For Tablet */
-
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
     #header .hamburger {
         display: none;
     }
@@ -571,6 +563,11 @@ input, textarea {
         display: none;
     }
 
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
     #content .flex-content-bottom .content-bottom {
         width: 25%;
     }
@@ -585,7 +582,7 @@ input, textarea {
         font-size: 18px;
     }
 
-    #form h1 {
+    #form .form-title {
         font-size: 3rem;
     }
 }
