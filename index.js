@@ -15,8 +15,7 @@ let contentBackground = document.getElementById('content');
 let contentColorTitle = document.querySelector('#content .content-title');
 let contentColorP = document.querySelector('#content .content .content-top p');
 let formBackground = document.getElementById('form');
-let formColorH1 = document.querySelector('#form .form .form-title');
-let formColorP = document.querySelector('#form .form .form-text');
+let formColorContainer = document.querySelector('.form');
 
 
 darkMode.addEventListener('click', function() {
@@ -28,18 +27,12 @@ darkMode.addEventListener('click', function() {
         contentColorP.style.color = 'gainsboro';
     }
 
-    // if(formColorH1.style.color === 'gainsboro' && formColorP.style.color === 'gainsboro') {
-    //     formColorH1.style.color = 'black';
-    //     formColorP.style.color = 'black';
-    // } else {
-    //     formColorH1.style.color = 'gainsboro';
-    //     formColorP.style.color = 'gainsboro';
-    // }
-
         toggleButton.classList.toggle('fa-toggle-on');
         contentBackground.classList.toggle('contentDarkMode');
         formBackground.classList.toggle('formDarkMode');
+        formColorContainer.classList.toggle('white');
 });
+// End Toggle Dark Mode
 
 item.forEach(item => {
     item.addEventListener('click', () => {

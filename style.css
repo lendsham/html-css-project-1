@@ -32,6 +32,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.white {
+    color: gainsboro !important;
+}
+
 a {
     text-decoration: none;
 }
@@ -51,7 +55,7 @@ img {
 }
 
 p {
-    color: black;
+    /* color: black; */
     font-size: 1.2rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -361,21 +365,20 @@ p {
 /* Form Section */
 #form .form {
     text-align: center;
-    margin: -70px 0;
+    margin: -100px auto 0;
     padding: 0 50px;
     flex-direction: column;
+    color: black;
 }
 
 #form .form-title {
     border-top: 1px solid #c6d1d8;
     font-size: 2rem;
     margin-bottom: 30px;
-    color: black;
 }
 
 #form .form-text {
     font-size: 1rem;
-    color: black;
 }
 
 input, textarea {
@@ -447,12 +450,12 @@ input, textarea {
 }
 
 #footer .social-item img {
-    filter: grayscale(0);
+    filter: grayscale(1);
     transition: .3s ease filter;
 }
 
 #footer .social-item:hover img {
-    filter: grayscale(1);
+    filter: grayscale(0);
 }
 
 #footer p {
