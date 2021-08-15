@@ -2,7 +2,7 @@
 
 This is Portfolio Profile Website.
 
-# Stack
+# Stacks
 - HTML
 - CSS
 - Javascript
